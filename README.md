@@ -10,7 +10,7 @@
 
 简单概述部署运行此项目的环境和方法，以
 
-- Window7-64位系统
+- Ubuntu16.04-64位系统
 - IntelliJ IDEA-2017.2
 - JDK-1.8
 - Maven-3.5.0
@@ -73,29 +73,29 @@
 
 ## 项目截图
 
-### 记录查询
 <p align="center">
 <img src="https://github.com/fenlan/Mycode/blob/master/images/cloudcourse1.png" width="600" height="337.5"/>
+记录查询
 </p>
 
-## 轨迹重现
 <p align="center">
 <img src="https://github.com/fenlan/Mycode/blob/master/images/cloudcourse2.png" width="600" height="337.5"/>
+轨迹重现
 </p>
 
-## 过滤数据
 <p align="center">
 <img src="https://github.com/fenlan/Mycode/blob/master/images/cloudcourse3.png" width="600" height="337.5"/>
+过滤数据
 </p>
 
-## 过车统计
 <p align="center">
 <img src="https://github.com/fenlan/Mycode/blob/master/images/cloudcourse4.png" width="600" height="337.5"/>
+过车统计
 </p>
 
-## 相遇统计
 <p align="center">
 <img src="https://github.com/fenlan/Mycode/blob/master/images/cloudcourse5.png" width="600" height="337.5"/>
+相遇统计
 </p>
 
 ## **Q&A**
