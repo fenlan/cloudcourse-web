@@ -23,8 +23,8 @@
 - 安装[JDK-1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)，并[设置环境变量](http://jingyan.baidu.com/article/925f8cb836b26ac0dde0569e.html)
 - 安装IntelliJ IDEA
 - 下载此项目源码
-  - `git clone https://github.com/muxfe/xdu-cloudcourse-web.git`
-  - [打包下载ZIP](https://github.com/muxfe/xdu-cloudcourse-web/archive/master.zip)
+  - `git clone https://github.com/fenlan/cloudcourse-web`
+  - [打包下载ZIP](https://github.com/fenlan/cloudcourse-web/archive/master.zip)
 
 ## 导入项目
 
