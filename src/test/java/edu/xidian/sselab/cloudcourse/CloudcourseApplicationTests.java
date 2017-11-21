@@ -14,6 +14,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -22,33 +24,19 @@ import java.util.List;
 @SpringBootTest
 public class CloudcourseApplicationTests {
 
-	private static final String TABLE_NAME = "VehicleCount";
-
-	private final HbaseClient hbaseClient;
-
-	@Autowired
-	public CloudcourseApplicationTests(HbaseClient hbaseClient) {
-		this.hbaseClient = hbaseClient;
-	}
-
 	@Test
 	public void contextLoads() {
-
-		List<CountRecord> resultRecords = new ArrayList<>();
-		hbaseClient.getConnection();
-		Table table = hbaseClient.getTableByName(TABLE_NAME);
-		Scan scan = new Scan();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Long time = Long.parseLong("1496246559")*1000;
+		String d = format.format(time);
 		try {
-			ResultScanner resultScanner = table.getScanner(scan);
-			for (Result result : resultScanner) {
-				CountRecord tempRecord = new CountRecord().mapFrom(result);
-				System.out.println(tempRecord.getCount());
-				resultRecords.add(tempRecord);
-			}
-		} catch (IOException e) {
+			Date date = format.parse(d);
+			System.out.println(date);
+		} catch (ParseException e) {
 			e.printStackTrace();
-			System.out.println("query failed!");
 		}
+
+
 	}
 
 }

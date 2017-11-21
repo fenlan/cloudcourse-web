@@ -62,7 +62,8 @@
                         <td th:text="${record.getEid()}"></td>
                         <td th:text="${record.getPlaceId()}"></td>
                         <!--<td th:text="${record.getTime()}"></td>-->
-                        <td th:text="${#dates.format(record.getTime(), '2017-06-01 HH:mm:ss')}"></td>
+                        <td th:text="${#dates.format(record.getTime()*1000, '2017-06-01 HH:mm:ss')}"></td>
+                        <!--<td th:text="${#dates.format(new java.util.Date(record.getTime()))}"></td>-->
                         <td th:text="${record.getAddress()}"></td>
                         <td th:text="${record.getLongitude()}"></td>
                         <td th:text="${record.getLatitude()}"></td>
