@@ -109,7 +109,7 @@
         map = new BMap.Map('mapHolder', { enableMapClick: false });
         // 设置地图中心点和缩放比例
         if (list) {
-            map.centerAndZoom(new BMap.Point(list[0]["longitude"], list[0]["latitude"]), 13);
+             map.centerAndZoom(new BMap.Point(list[0]["longitude"], list[0]["latitude"]), 13);
         }
         else {
             map.centerAndZoom(new BMap.Point(103.388611, 35.563611), 5);
@@ -200,17 +200,6 @@
 
     document.getElementById("test").innerHTML=arr.length;
     /*]]>*/
-
-//    function gcj02tobd09(lng, lat) {
-//        var x_PI = 3.14159265358979324 * 3000.0 / 180.0;
-//        var lat = +lat;
-//        var lng = +lng;
-//        var z = Math.sqrt(lng * lng + lat * lat) + 0.00002 * Math.sin(lat * x_PI);
-//        var theta = Math.atan2(lat, lng) + 0.000003 * Math.cos(lng * x_PI);
-//        var bd_lng = z * Math.cos(theta) + 0.0065;
-//        var bd_lat = z * Math.sin(theta) + 0.006;
-//        return [bd_lng, bd_lat]
-//    };
 </script>
 </body>
 </html>
